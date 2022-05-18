@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/root.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Document</title>
+   <style>
+      .detail {
+         margin-top: 68px;
+         margin-bottom: 68px;
+      }
+
+      img {
+         width: 100%;
+      }
+
+      .detail .title {
+         font-size: 34px;
+         font-weight: 300;
+         margin: 18px 0;
+      }
+
+      .detail h2 {
+         color: red;
+      }
+
+      .detail a {
+         text-decoration: none;
+         font-size: 18px;
+      }
+
+      .detail h5 {
+         margin-top: 12px;
+      }
+
+      .col-lg-4.col-12.choose {
+         display: flex;
+         align-items: center;
+      }
+
+      .choose input {
+         margin-right: 6px;
+      }
+
+      .choose label {
+         margin-right: 16px;
+         font-size: 18px;
+      }
+
+      input#quantity {
+         outline: none;
+         text-align: center;
+      }
+
+      .btn-cart {
+         justify-content: space-between;
+      }
+
+      button.col-6.btn.btn-primary {
+         width: 45%;
+         margin-left: 12px;
+         margin-top: 24px;
+         margin-bottom: 24px;
+         font-size: 20px;
+         padding: 6px;
+      }
+
+      .div-bottom {
+         font-size: 18px;
+         margin: 4px 0;
+      }
+
+      .mo-ta p {
+         font-size: 40px;
+         text-align: center;
+         margin-top: 12vh;
+         margin-bottom: 48px;
+         color: red;
+         padding-top: 40px;
+         border-top: 2px solid;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- header -->
+   <div class="header"></div>
+
+   <div class="container detail">
+      <div class="row">
+         <div class="col-lg-4 col-12">
+            <img src="../image/aoKhoac/anh1.jpg" alt="">
+         </div>
+         <div class="col-lg-8 col-12">
+            <div class="col-12 title">ÁO KHOÁC M1AKD03202FONCR</div>
+            <h2>385,000₫</h2>
+            <a href="http://127.0.0.1:5500/huongDanChoSize/huongDanChoSize.html">Hướng dẫn chọn size</a>
+            <h5>Màu sắc:</h5>
+            <div class="col-lg-4 col-12 choose color">
+               <input type="radio" id="white" name="fav_language" value="Trắng" checked="true">
+               <label for="white">Trắng</label><br>
+               <input type="radio" id="blue" name="fav_language" value="Xanh">
+               <label for="blue">Xanh</label><br>
+               <input type="radio" id="black" name="fav_language" value="Đen">
+               <label for="black">Đen</label>
+            </div>
+            <h5>Kích cỡ:</h5>
+            <div class="col-lg-4 col-12 choose size">
+               <input type="radio" id="M" name="size" value="M">
+               <label for="M">M</label><br>
+               <input type="radio" id="L" name="size" value="L">
+               <label for="L">L</label><br>
+               <input type="radio" id="XL" name="size" value="XL">
+               <label for="javascript">XL</label>
+            </div>
+            <h5>Số lượng:</h5>
+            <div class="col-lg-4 col-12 choose size">
+               <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+            </div>
+            <div class="row btn-cart">
+               <button class="col-6 btn btn-primary cart" type="submit">Thêm vào giỏ</button>
+               <button class="col-6 btn btn-primary buy" type="submit">Mua ngay</button>
+            </div>
+            <div class="div-bottom">» BẢO HÀNH SẢN PHẨM 90 NGÀY</div>
+            <div class="div-bottom">» ĐỔI HÀNG TRONG VÒNG 30 NGÀY</div>
+            <div class="div-bottom">» HOTLINE BÁN HÀNG 1900 633 501</div>
+         </div>
+         <div class="col-12 mo-ta">
+            <p>Mô tả</p>
+            <img src="../image/aoKhoac/mota11.jpg" alt="">
+            <img src="../image/aoKhoac/mota12.jpg" alt="">
+            <img src="../image/aoKhoac/mota13.jpg" alt="">
+            <img src="../image/aoKhoac/mota14.jpg" alt="">
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- footer -->
+   <div class="footer"></div>
+
+   <script src="../home/footer.js"></script>
+   <script src="../home/header.js"></script>
+   <script src="./detail.js"></script>
+
+   <script>
+      document.querySelector('.footer').innerHTML = renderFooter();
+      document.querySelector('.header').innerHTML = renderHeader();
+
+      let idDetail = JSON.parse(localStorage.getItem('idDetail'));
+      document.querySelector('.detail').innerHTML = renderDetailSanPham(idDetail);
+
+      function themVaoGio(id) {
+         if (!document.querySelector('input[name = "color"]:checked')) {
+            alert('Bạn chưa chọn màu săc!!!');
+         }
+         let color = document.querySelector('input[name = "color"]:checked').value;
+         if (!document.querySelector('input[name = "size"]:checked')) {
+            alert('Bạn chưa chọn size!!!');
+         }
+         let size = document.querySelector('input[name = "size"]:checked').value;
+         let quantity = document.querySelector('input[name = "quantity"]').value;
+         let cart;
+         if (localStorage.getItem('cart')) {
+            cart = JSON.parse(localStorage.getItem('cart'));
+         }
+         else {
+            cart = [];
+         }
+         let listSp = JSON.parse(localStorage.getItem('listSp'));
+         let sp = listSp.find(sp => sp.id === id);
+         let itemCart = { id: id, image: sp.image, name: sp.name, price: sp.price, color: color, size: size, quantity: quantity }
+         cart.push(itemCart);
+         localStorage.setItem('cart', JSON.stringify(cart));
+         window.location.reload();
+      }
+
+      function thanhToan(id) {
+         if (!document.querySelector('input[name = "color"]:checked')) {
+            alert('Bạn chưa chọn màu săc!!!');
+         }
+         let color = document.querySelector('input[name = "color"]:checked').value;
+         if (!document.querySelector('input[name = "size"]:checked')) {
+            alert('Bạn chưa chọn size!!!');
+         }
+         let size = document.querySelector('input[name = "size"]:checked').value;
+         let quantity = document.querySelector('input[name = "quantity"]').value;
+         let listSp = JSON.parse(localStorage.getItem('listSp'));
+         let sp = listSp.find(sp => sp.id === id);
+         let itemCart = { id: id, image: sp.image, name: sp.name, price: sp.price, color: color, size: size, quantity: quantity }
+         localStorage.setItem('muaNgay', JSON.stringify(itemCart));
+         window.location.replace('http://127.0.0.1:5500/thanhToan/thanhToan.html');
+      }
+
+
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

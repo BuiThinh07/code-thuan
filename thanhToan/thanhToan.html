@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/root.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Document</title>
+   <style>
+      .checkout {
+         font-size: 26px;
+         padding: 20px;
+         border-bottom: 1px solid #c3b0b0;
+         margin-bottom: 20px;
+      }
+
+      .col-12.title {
+         display: flex;
+         font-size: 18px;
+         font-weight: 600;
+         margin-top: 32px;
+      }
+
+      .title p {
+         padding: 1px 10px;
+         background-color: red;
+         border-radius: 100%;
+         color: #fff;
+         margin-right: 8px;
+      }
+
+      .title-description {
+         margin-bottom: 6px;
+         font-weight: 600;
+      }
+
+      input.form-control {
+         margin-bottom: 12px;
+      }
+
+      textarea.col-12 {
+         outline: none;
+         border: 1px solid #c7cdd3;
+         border-radius: 6px;
+         padding: 4px 12px;
+      }
+
+      .col-12.math {
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 1px solid #e3dbdb;
+         margin-top: 1rem;
+      }
+
+      .math p {
+         font-weight: 600;
+      }
+
+      .math .total {
+         color: blue;
+      }
+
+      input.col-10.form-control.uu-dai {
+         width: 72%;
+      }
+
+      .btn-uu-dai {
+         width: 25%;
+         height: 38px;
+         margin-left: 1vw;
+      }
+
+      .btn {
+         height: 38px;
+      }
+
+      .col-12.uu-dai {
+         display: flex;
+      }
+
+      .title-description.uu-dai,
+      .col-12.btn {
+         margin-top: 1rem;
+      }
+
+      .col-12.col-lg-4 {
+         border-right: 1px solid #ebe6e6;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- header -->
+   <div class="header"></div>
+
+   <div class="container thanhToan">
+      <div class="row" style="margin: 24px 0 76px 0">
+         <div class="col-12 checkout">Thanh toán sản phẩm</div>
+         <div class="col-12 col-lg-4">
+            <div class="col-12 title">
+               <p>1</p>
+               Thông tin hóa đơn
+            </div>
+            <div class="col-12 title-description">Họ và tên</div>
+            <input type="text" class="form-control" placeholder="Nhập họ và tên...">
+            <div class="col-12 title-description">Email</div>
+            <input type="text" class="col-6 form-control" placeholder="Nhập họ và tên...">
+            <div class="col-12 title-description">Điện thoại</div>
+            <input type="text" class="col-6 form-control" placeholder="Nhập họ và tên...">
+            <div class="col-12 title-description">Địa chỉ</div>
+            <input type="text" class="form-control" placeholder="Nhập họ và tên...">
+            <div class="row">
+               <div class="col-6">
+                  <div class="col-12 title-description">Tỉnh/ Thành phố</div>
+                  <input type="text" class="form-control" placeholder="Nhập họ và tên...">
+               </div>
+               <div class="col-6">
+                  <div class="col-12 title-description">Quận/ Huyện</div>
+                  <input type="text" class="form-control" placeholder="Nhập họ và tên...">
+               </div>
+            </div>
+            <div class="col-12 title-description">Phường/ Xã</div>
+            <input type="text" class="form-control" placeholder="Nhập họ và tên...">
+            <textarea class="col-12" placeholder="Ghi chú đơn hàng"></textarea>
+         </div>
+
+         <div class="col-12 col-lg-4">
+            <div class="col-12 title">
+               <p>2</p>
+               Phương thức thanh toán
+            </div>
+            <input class="form-check-input" type="radio" name="thanhToan" id="thanhToan">
+            <label class="form-check-label" for="thanhToan">
+               Thanh toán tiền mặt khi nhận hàng (COD)
+            </label>
+         </div>
+
+         <div class="col-12 col-lg-4" style="border-right: none">
+            <div class="col-12 title">
+               <p>3</p>
+               Thông tin mặt hàng
+            </div>
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th scope="col">Tên sản phẩm</th>
+                     <th scope="col">Số lượng</th>
+                     <th scope="col">Giá</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Mark</td>
+                     <td>Otto</td>
+                     <td>@mdo</td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="col-12 math">
+               <p class="title-description">Tạm tính:</p>
+               <p>1.000.000 VNĐ</p>
+            </div>
+            <div class="col-12 math">
+               <p class="title-description">Phí vận chuyển:</p>
+               <p>0 VNĐ</p>
+            </div>
+            <div class="col-12 math">
+               <p class="title-description">Tổng cộng:</p>
+               <p class="total">1.000.000 VNĐ</p>
+            </div>
+            <p class="title-description uu-dai">Nhập mã ưu đãi</p>
+            <div class="col-12 uu-dai">
+               <input type="text" class="col-10 form-control uu-dai" placeholder="Nhập vào nếu có...">
+               <button type="submit" class="col-2 btn btn-primary btn-uu-dai">Áp dụng</button>
+            </div>
+            <button type="button" class="col-12 btn btn-primary">Thanh toán</button>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- footer -->
+   <div class="footer"></div>
+
+   <script src="../home/footer.js"></script>
+   <script src="../home/header.js"></script>
+   <script src="./thanhToan.js"></script>
+
+   <script>
+      document.querySelector(' .footer').innerHTML = renderFooter();
+      document.querySelector('.header').innerHTML = renderHeader();
+      document.querySelector('.thanhToan').innerHTML = renderThanhToan(); 
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/root.css">
+   <link rel="stylesheet" href="../lienquanAndComment/lienquanAndCmt.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Document</title>
+   <style>
+      .title {
+         font-size: 30px;
+         font-weight: 300;
+         margin-top: 32px;
+      }
+
+      .description {
+         display: flex;
+         font-size: 20px;
+         font-weight: 300;
+         margin-top: 12px;
+         margin-bottom: 32px;
+      }
+
+      .description p {
+         font-weight: 400;
+         margin: 0 6px;
+         color: #78cccd;
+      }
+
+      img {
+         margin-bottom: 72px;
+         width: 100%;
+      }
+
+      .social-network {
+         text-align: center;
+         font-size: 40px;
+         color: #0000ffc4;
+         padding-bottom: 32px;
+         border-bottom: 2px solid #c3c3c3;
+      }
+
+      .social-network i {
+         padding: 6px;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- header -->
+   <div class="header"></div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-12 title">CÁCH KIỂM TRA THÔNG TIN ĐƠN HÀNG</div>
+         <div class="col-12 description">Đăng bởi <p>Admin</p> on <p>1-11-2019</p>
+         </div>
+         <div class="col-12">
+            <img src="../image/kiemtradonhang/ktrdonhang.jpg" alt="">
+         </div>
+         <div class="col-12 social-network">
+            <a
+               href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftotoshop.vn%2Fchinh-sach-thanh-vien-n65278.html%22">
+               <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+               href="https://twitter.com/intent/tweet?url=https://totoshop.vn/chinh-sach-thanh-vien-n65278.html&via=TWITTER-HANDLE">
+               <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+               href="https://twitter.com/intent/tweet?url=https://totoshop.vn/chinh-sach-thanh-vien-n65278.html&via=TWITTER-HANDLE">
+               <i class="fa-brands fa-twitter"></i>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- liên quan and comment -->
+   <div class="container">
+      <div class="row lienQuanAndComment"></div>
+   </div>
+
+   <!-- footer -->
+   <div class="footer"></div>
+
+   <script src="../home/footer.js"></script>
+   <script src="../home/header.js"></script>
+   <script src="../lienquanAndComment/lienquanAndCmt.js"></script>
+
+   <script>
+      document.querySelector('.footer').innerHTML = renderFooter();
+      document.querySelector('.header').innerHTML = renderHeader();
+      document.querySelector('.lienQuanAndComment').innerHTML = renderLienQuanAndCmt();
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

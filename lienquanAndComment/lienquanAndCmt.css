@@ -1,0 +1,33 @@
+.title {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 32px;
+}
+
+img {
+  margin-bottom: 72px;
+}
+
+.card img {
+  margin-bottom: 16px;
+}
+
+p.card-text {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 8px !important;
+}
+
+.card {
+  margin: 24px 0 48px;
+  width: 100% !important;
+}
+
+.card:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgb(240, 234, 234);
+}
+
+a {
+  text-decoration: none;
+}

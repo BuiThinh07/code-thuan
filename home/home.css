@@ -1,0 +1,30 @@
+.slides {
+  margin-bottom: 64px;
+}
+
+/* item sản phẩm */
+a.item {
+  text-decoration: none;
+  display: block;
+}
+
+.item-card {
+  width: 100% !important;
+  transition: all 0.3s;
+  padding-bottom: 12px;
+  margin-bottom: 48px;
+  border: 1px solid rgb(240, 232, 232);
+  border-radius: 6px;
+  border-collapse: collapse;
+}
+
+.item-card:hover {
+  box-shadow: 0 0 18px #e6d6d6;
+  transform: translateY(-6px);
+  transition: all 0.3s ease 0;
+}
+
+h5.price {
+  text-align: center;
+  margin-top: 20px;
+}
